@@ -10,4 +10,5 @@ A jwt based authentication and payload encryption standalone applications for AP
 
 # Cluster Resources :
 
-<img width="1464" height="250" alt="image" src="https://github.com/user-attachments/assets/f47f1ac4-0f67-4152-9c94-b4fce31ab110" />
+<img width="1871" height="210" alt="image" src="https://github.com/user-attachments/assets/e53deda2-0a39-4a1b-ae65-34b0b7431d59" />
+
