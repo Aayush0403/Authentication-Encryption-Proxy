@@ -1,4 +1,4 @@
-@Library("devops-pipeline-lib@main") _
+@Library("devops-pipelines-lib@main") __
 
 Main([
     applicationName: "jwt-redirect-be",
@@ -24,7 +24,7 @@ Main([
     // approvers for the pipeline
         teamLead: "aayushgupta",
     // email notifications
-        emailRecipients: "aayush.gupta123@xyz.com"
+        emailRecipients: "aayushgupta123@xyz.com"
     ],
     
 
@@ -45,9 +45,7 @@ Main([
             cluster: "cluster",
             namespace: "default",
             credentialsId: "deployment",
-            artifactCredsId: "artifact",
-            registryLocation: "xyz",
-            repositoryName: "xyz"
+            artifactCreds: "artifact"
         ],
         stage: [
             project: "xyz",
@@ -55,9 +53,7 @@ Main([
             cluster: "cluster",
             namespace: "default",
             credentialsId: "deployment",
-            artifactCredsId: "artifact",
-            registryLocation: "xyz",
-            repositoryName: "xyz"
+            artifactCreds: "artifact"
         ],
         release: [
             project: "xyz",
@@ -65,11 +61,10 @@ Main([
             cluster: "cluster",
             namespace: "default",
             credentialsId: "deployment",
-            artifactCredsId: "artifact",
-            registryLocation: "xyz",
-            repositoryName: "xyz"
+            artifactCreds: "artifact"
         ]
 
     ]
 ]
+
 )
