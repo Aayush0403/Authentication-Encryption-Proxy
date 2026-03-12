@@ -1,0 +1,75 @@
+@Library("devops-pipeline-lib@main") _
+
+Main([
+    applicationName: "jwt-redirect-be",
+    
+    // language of the application, can be "java", "python", "nodejs", 
+    language: "go",
+
+    // container_port for the application
+    containerPort: "8000",
+
+
+    // Resource requests and limits
+    resources: [
+        memoryRequest: "250Mi",
+        cpuRequest: "250m",
+        memoryLimit: "500Mi", 
+        cpuLimit: "500m",
+        replicaCount: "1"
+    ],
+    
+
+    notifications: [
+    // approvers for the pipeline
+        teamLead: "aayushgupta",
+    // email notifications
+        emailRecipients: "aayush.gupta123@xyz.com"
+    ],
+    
+
+// labels and selectors for the Kubernetes deployment
+    metadata: [
+        // for authentication, set to "auth" or "no-auth" or if both "auth,no-auth" this is for gateway
+        authStatus: "auth",
+        // for application type, set to "backend" or "frontend" 
+        applicationType: "backend",
+        organizationName: "xyz"
+    ],
+    
+    // environments configuration
+    environments: [
+        dev: [
+            project: "xyz",
+            region: "abc",
+            cluster: "cluster",
+            namespace: "default",
+            credentialsId: "deployment",
+            artifactCredsId: "artifact",
+            registryLocation: "xyz",
+            repositoryName: "xyz"
+        ],
+        stage: [
+            project: "xyz",
+            region: "abc",
+            cluster: "cluster",
+            namespace: "default",
+            credentialsId: "deployment",
+            artifactCredsId: "artifact",
+            registryLocation: "xyz",
+            repositoryName: "xyz"
+        ],
+        release: [
+            project: "xyz",
+            region: "abc",
+            cluster: "cluster",
+            namespace: "default",
+            credentialsId: "deployment",
+            artifactCredsId: "artifact",
+            registryLocation: "xyz",
+            repositoryName: "xyz"
+        ]
+
+    ]
+]
+)
