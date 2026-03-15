@@ -2,7 +2,7 @@
 A jwt based authentication and payload encryption standalone applications for API Gateway.  
 
 
-Above code is for the redirect application that performs payload encryption and decryption using AES-256-CBC algorithm.
+Above code is for the payload encryption application that performs payload encryption and decryption using AES-256-CBC algorithm.
 
 # The Architecture Diagram :
 
