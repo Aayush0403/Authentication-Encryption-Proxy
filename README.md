@@ -9,8 +9,9 @@ Above code is for the ***payload encryption(Redirect) application*** that perfor
   <img width="727" height="828" alt="image" src="https://github.com/user-attachments/assets/0f4dccd1-90d4-44c0-8747-1e44bbe17bef" />
   
 # Jenkins Pipeline :
+<img width="1499" height="561" alt="image" src="https://github.com/user-attachments/assets/e8c38844-3a87-4c2a-abfd-7d7e0652fa40" />
 
-<img width="1419" height="467" alt="image" src="https://github.com/user-attachments/assets/bf70fc10-5c3c-49dc-8f7e-f64f1b4430ae" />
+<!-- <img width="1419" height="467" alt="image" src="https://github.com/user-attachments/assets/bf70fc10-5c3c-49dc-8f7e-f64f1b4430ae" /> -->
 
 # Cluster Resources :
 
